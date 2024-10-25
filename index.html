@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GOLD GYM</title>
+    <link rel="stylesheet" href="/Styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header Section -->
@@ -13,18 +20,18 @@
         <div><h1>LOGO</h1></div>
 
         <!-- Navigation -->
-        <ul>
-          <li>
-            <a href="">Home</a>
+        <ul class="navigation">
+          <li class="active">
+            <a href="" >Home</a>
           </li>
           <li>
-            <a href="">About </a>
+            <a href="about.html">About </a>
           </li>
           <li>
             <a href="">Workout Programs</a>
           </li>
           <li>
-            <a href="">Recipes</a>
+            <a href="#recipe">Recipes</a>
           </li>
           <li>
             <a href="">Store</a>
@@ -56,49 +63,54 @@
       <div>Image</div>
     </section>
 
-    <!-- Workout Program -->
-    <section>
-      <h1>Free Workout Programs</h1>
-      <div>
+    <!-- ************************ Workout Program   ***************************** -->
+    <section id="recipe">
+      <h1 class="titleText">Free Workout Programs</h1>
+      <div class="programs">
         <!-- 1 -->
         <div>
-          <div>
-            <h3>Beginner Friendly</h3>
-            Image
+          <div class="xam">
+            <h3 class="Text">Beginner Friendly</h3>
           </div>
-          <button>Start Today</button>
+          <div class="btn">
+            <button>Start Today</button>
+          </div>
         </div>
         <!-- 2 -->
         <div>
-          <div>
-            <h3>Moderate to Advanced</h3>
-            Image
+          <div class="xam">
+            <h3 class="Text">Moderate to Advanced</h3>
           </div>
-          <button>Start Today</button>
+          <div class="btn">
+            <button>Start Today</button>
+          </div>
         </div>
         <!-- 3 -->
         <div>
-          <div>
-            <h3>Weight Loss</h3>
-            Image
+          <div class="xam">
+            <h3 class="Text">Weight Loss</h3>
           </div>
-          <button>Start Today</button>
+          <div class="btn">
+            <button>Start Today</button>
+          </div>
         </div>
         <!-- 4 -->
         <div>
-          <div>
-            <h3>No Equipment</h3>
-            Image
+          <div class="xam">
+            <h3 class="Text">No Equipment</h3>
           </div>
-          <button>Start Today</button>
+          <div class="btn">
+            <button>Start Today</button>
+          </div>
         </div>
         <!-- 5 -->
         <div>
-          <div>
-            <h3>Strength Training</h3>
-            Image
+          <div class="xam">
+            <h3 class="Text">Strength Training</h3>
           </div>
-          <button>Start Today</button>
+          <div class="btn">
+            <button>Start Today</button>
+          </div>
         </div>
       </div>
     </section>
@@ -106,29 +118,29 @@
     <!-- /// GET OUR MERCH -->
     <section>
       <div>
-        <h2>/// GET OUR MERCH</h2>
-        <button>View All Products</button>
+        <h2 class="cap" >/// GET OUR MERCH</h2>
+        <button class="but" >View All Products</button>
       </div>
 
-      <div>
+      <div class="merch">
         <!-- 1 -->
-        <div>
-          Image
+        <div class="box1">
+          <img src="/Images/Frame 17.png" width="300" alt="" />
           <h4>Bag</h4>
         </div>
         <!-- 2 -->
-        <div>
-          Image
+        <div class="box2">
+          <img src="/Images/Frame 17.png" width="300" alt="" />
           <h4>Shirt</h4>
         </div>
         <!-- 3 -->
-        <div>
-          Image
+        <div class="box3">
+          <img src="/Images/Frame 17.png" width="300" alt="" />
           <h4>Bottle</h4>
         </div>
         <!-- 4 -->
-        <div>
-          Image
+        <div class="box4">
+           <img src="/Images/Frame 17.png" width="300" alt="" />
           <h4>Shirt</h4>
         </div>
       </div>
@@ -144,7 +156,7 @@
     <section>
       <div>
         <h3>///Recipes</h3>
-        <button>View More Recipes</button>
+        <button type="submit" title="more">View More Recipes</button>
       </div>
       <div>
         <!-- Left -->
@@ -158,7 +170,7 @@
               fluffy quinoa. Completed with a healthy and delicious satay
               dipping sauce and crushed roasted peanuts. Delicious!
             </p>
-            <button>View Full Recipe</button>
+            <button title="more">View Full Recipe</button>
           </div>
         </div>
         <!-- Right -->
@@ -183,6 +195,8 @@
       </div>
     </section>
 
+    <input type="text" placeholder="Enter text" />
+
     <!-- ///Contact Us -->
     <section>
       <div>
@@ -202,7 +216,7 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer id="recipe">
       Image
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

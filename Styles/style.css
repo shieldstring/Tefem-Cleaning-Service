@@ -1,0 +1,123 @@
+/* CSS layout
+ Introduction to CSS layout 
+ Normal Flow 
+ Flexbox 
+ Grids 
+ Floats 
+ Positioning 
+ Multiple-column 
+ Layout 
+ Responsive design 
+ media queries.
+ Mini project 1 */
+
+
+
+body {
+    /* background-image: url("/Videos/tour.mp4"); */
+    background-color: #000;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    color: aliceblue;
+}
+
+.Text {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* Header Section */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 48px;
+
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color: #000;
+}
+    
+.navigation{
+    display: flex;
+        justify-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        
+}
+
+ul{
+list-style: none;
+}
+
+li a {
+    text-decoration: none;  
+    color: #fff;
+    padding: 3px;
+}
+
+li:hover{
+    text-decoration: underline;
+        text-underline-offset: 10px;
+}
+.active{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.programs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: space-evenly;
+    padding:0px 60px;
+}
+
+.merch{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+}
+
+
+.Text{
+transform: rotate(-90deg);
+}
+
+button{
+    padding:20px 60px;
+    border-radius: 20px;
+    border-color: gold;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.btn{
+     display: flex;
+     justify-content: center;   
+     padding-top: 30px;
+}
+
+.xam{
+background-image: url("/Images/Frame 17.png");
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    padding-top: 200px;
+    width: 250px;
+}
+
+button:hover{
+    background-color:gold;
+    cursor: pointer;
+    color: black;
+}
+
+
+.merch{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
